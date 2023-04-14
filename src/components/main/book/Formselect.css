@@ -1,0 +1,9 @@
+.required-indicator {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.form-select {
+    display: flex;
+    flex-direction: column;
+}

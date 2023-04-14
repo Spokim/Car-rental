@@ -1,0 +1,45 @@
+.trip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 1rem;
+}
+
+.trip-about-container {
+    margin: 0 1rem;
+}
+
+.trip-about-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip-about-container > div > div {
+    margin: 3rem;
+}
+
+@media screen and (min-width:1200px) {
+    .trip-about-container {
+        display: grid;
+        grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr;
+        gap: 2rem;
+    }
+    
+    .select-a-car-container {
+        grid-column: 2 / 3;
+        align-self: start;
+    }
+    
+    .contact-an-operator-container {
+        grid-column: 3 / 4;
+        align-self: start;
+    }
+    
+    .lets-drive-container{
+        grid-column: 4 / 5;
+        align-self: start;
+    }
+}

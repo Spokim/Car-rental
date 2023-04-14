@@ -1,0 +1,50 @@
+.book-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto 2rem auto;
+    padding: 4rem;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    
+}
+
+.form-container {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+select, input {
+    background-color: white;
+    padding: 0.3rem 0.3rem;
+}
+
+label {
+    padding: 0.3rem 0;
+}
+
+.form-button {
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2rem;
+}
+
+
+@media screen and (min-width: 1100px) {
+    .form-container {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .form-button{
+        display: flex;
+        justify-self: center;
+        align-self: flex-end;
+        width: 90%;
+
+    }
+}

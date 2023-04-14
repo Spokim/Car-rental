@@ -1,0 +1,38 @@
+.appdl-section {
+    background-color: #f8f8f8;
+    padding: 5rem 0;
+}
+
+.appdl-content-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.appdl-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 40rem;
+    text-align: left;
+}
+
+.appdl-image-container {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.appdl-image-container img {
+    max-width: calc(163px * 1.5);
+    max-height: calc(511px * 1.5);
+}
+
+@media screen and (min-width: 1100px) {
+    .appdl-section {
+        background-image: url(../../../images/phone-applestore.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+}

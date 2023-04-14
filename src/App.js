@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './components/navigation/Navbar';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 
-function App() {
+export default function App() {
+  const handleClick = (anchor, e) => {
+    e.preventDefault();
+    const id = `${anchor}-section`;
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main>
+        <Navbar handleClick={handleClick} />
+        <Main handleClick={handleClick} />
+        <Footer />
+      </main>
+    </>
   );
 }
-
-export default App;

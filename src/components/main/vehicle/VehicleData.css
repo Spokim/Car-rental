@@ -1,0 +1,39 @@
+.vehicledata-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.vehicledata-table-container {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicledata-table {
+    padding-bottom: 1rem;
+}
+
+.vehicle-price, .vehicle-table-link {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.6rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-top: none;
+}
+
+.table-row p:nth-child(1) {
+    border-right: 2px solid var(--secondary-color);
+}

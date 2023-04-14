@@ -1,0 +1,30 @@
+.testimonial-container {
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
+    padding: 1.5rem;
+    position: relative;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-container > p {
+    color: black;
+}
+
+.testimonial-layout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.testimonial-text-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.testimonial-text-container > img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
